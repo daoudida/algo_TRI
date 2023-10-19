@@ -1,0 +1,25 @@
+ALGORITHM algorithm_TRI
+
+VAR
+    tableau tab[1...N]:INTEGER
+
+    i,j,tmp:INTEGER
+BEGIN
+    pour i<--longueur(tab)-1 à 1 pas -1
+
+    pour j<-- 1 à i
+
+    si tab[j] > tab[i] alors
+
+    tmp <-- tab[j]
+
+    tab[j] <-- tab[j+1]
+
+    tab[j+1] <-- tmp
+
+    FinSi
+
+    FinPour
+    
+    FinPour
+END
